@@ -1,0 +1,20 @@
+name: "Delicate Actions"
+description: "A collection of delicate actions for AWS S3 Upload"
+inputs:
+  bucket:
+    description: "The name of the bucket to upload to"
+    required: true
+  folder_path:
+    description: "The source directory to upload"
+    required: true
+  region_name:
+    description: 'Region Name for S3 Upload'
+    required: false
+    default: "us-east-1"
+outputs:
+  website_url:
+    description: "The URL of the uploaded website"
+
+runs:
+  using: docker
+  image: Dockerfile
