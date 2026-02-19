@@ -2,8 +2,8 @@ FROM python:3
 
 COPY requirements.txt /requirements.txt
 
-COPY deployment.py /deployment.py
+COPY Deployment.py /Deployment.py
 
 RUN pip install -r /requirements.txt
 
-CMD ["python3", "/deployment.py"]
+CMD ["python3", "/Deployment.py"]
