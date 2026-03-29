@@ -16,5 +16,5 @@ def run():
             file_path = os.path.join(root, file)
             key = os.path.relpath(file_path, folder_path)
             session.upload_file(file_path, bucket_name, f"vibish/{key}")
-
+max_tries = 3
 run()
